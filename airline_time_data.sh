@@ -1,5 +1,4 @@
 #!/bin/bash
-
 arquivo="$1"
 if [ -z "$arquivo" ]; then
     echo -e "\nERRO: Informe o arquivo de dados como parâmetro.\n"
@@ -27,6 +26,7 @@ echo "*** 3. Voo mais longo ***"
 # 4. Quantidade de voos redirecionados;
 echo -e "--------------------------------------------------------------------------"
 echo "*** 4. Quantidade de voos redirecionados ***"
+echo -e  "Foram redirecionados $(cut -d, -f24 2006-sample.csv|grep 1|wc -l) vôos"
 
 # 5. Voo com maior atraso na saída;
 echo -e "--------------------------------------------------------------------------"
