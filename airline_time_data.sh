@@ -19,16 +19,25 @@ echo -e "-----------------------------------------------------------------------
 echo "*** 2. Voo com maior atraso na chegada ***"
 
 
-# 3. Voo com maior atraso na saída;
+# 3. Voo mais longo;
 echo -e "--------------------------------------------------------------------------"
-echo "*** 3. Voo com maior atraso na saída ***"
+echo "*** 3. Voo mais longo ***"
 
 
-# 4. Tempo de atraso total para a companhia Delta Air Lines;
+# 4. Quantidade de voos redirecionados;
 echo -e "--------------------------------------------------------------------------"
-echo "*** 4. Tempo de atraso total para a companhia Delta Air Lines ***"
+echo "*** 4. Quantidade de voos redirecionados ***"
 
-
-# 5. Tempo total de atrasos para a decolagem de vôos no aeroporto JFK;
+# 5. Voo com maior atraso na saída;
 echo -e "--------------------------------------------------------------------------"
-echo "*** 5. Tempo total de atrasos para a decolagem de vôos no aeroporto JFK ***"
+echo "*** 5. Voo com maior atraso na saída ***"
+
+
+# 6. Tempo de atraso total para a companhia Delta Air Lines;
+echo -e "--------------------------------------------------------------------------"
+echo "*** 6. Tempo de atraso total para a companhia Delta Air Lines ***"
+
+
+# 7. Tempo total de atrasos para a decolagem de vôos no aeroporto JFK;
+echo -e "--------------------------------------------------------------------------"
+echo "*** 7. Tempo total de atrasos para a decolagem de vôos no aeroporto JFK ***"
