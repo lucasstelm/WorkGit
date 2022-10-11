@@ -11,8 +11,8 @@ echo -e "\n                   Exercício resolvido em: $(date +%F\ %T)"
 echo -e "\n-----------------------------------------------------------------------------\n"
 
 # 1. Quantidade de atrasos de uma dada companhia passada como parâmetro;
-echo -e "*** 1. Quantidade de atrasos de uma dada companhia passada como parâmetro ***"
 
+echo -e "*** 1. Quantidade de atrasos de uma dada companhia passada como parâmetro ***"
 
 # 2. Voo com maior atraso na chegada;
 echo -e "--------------------------------------------------------------------------"
@@ -22,6 +22,8 @@ echo "*** 2. Voo com maior atraso na chegada ***"
 # 3. Voo mais longo;
 echo -e "--------------------------------------------------------------------------"
 echo "*** 3. Voo mais longo ***"
+echo "Voo mais longo e o tempo de voo:"
+(sort -t, -n -r -k14 2006-sample.csv| head -1| cut -d, -f11,14)
 
 
 # 4. Quantidade de voos redirecionados;
