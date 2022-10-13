@@ -48,4 +48,4 @@ echo "*** 6. Tempo de atraso total para a companhia Delta Air Lines ***"
 echo -e "--------------------------------------------------------------------------"
 echo "*** 7. Tempo total de atrasos para a decolagem de vôos no aeroporto JFK ***"
 (grep JFK 2006-sample.csv| awk -F "," '{if ($16>0) print $16}'| sum| cut -d ' ' -f 1)
-
+#teste
