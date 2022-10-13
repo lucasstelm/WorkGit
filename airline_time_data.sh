@@ -1,6 +1,7 @@
 #!/bin/bash
 
 arquivo="$1"
+companhia="$2"
 if [ -z "$arquivo" ]; then
     echo -e "\nERRO: Informe o arquivo de dados como parâmetro.\n"
     exit 1
@@ -13,8 +14,8 @@ echo -e "\n---------------------------------------------------------------------
 # 1. Quantidade de atrasos de uma dada companhia passada como parâmetro;
 echo -e "*** 1. Quantidade de atrasos de uma dada companhia passada como parâmetro ***"
 
-echo -e "Atrasos de partida: $(grep $(echo -e $arquivo) 2006-sample.csv| awk -F "," '$16>0{c++} END{print c+0}')"
-echo -e "Atrasos de chegada: $(grep $(echo -e $arquivo) 2006-sample.csv| awk -F "," '$15>0{c++} END{print c+0}')"
+echo -e "Atrasos de partida: $(grep $(echo -e $companhia) 2006-sample.csv| awk -F "," '$16>0{c++} END{print c+0}')"
+echo -e "Atrasos de chegada: $(grep $(echo -e $companhia) 2006-sample.csv| awk -F "," '$15>0{c++} END{print c+0}')"
 
 
 # 2. Voo com maior atraso na chegada;
