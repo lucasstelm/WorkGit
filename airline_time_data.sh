@@ -37,7 +37,7 @@ echo "*** 4. Quantidade de voos redirecionados ***"
 # 5. Voo com maior atraso na saída;
 echo -e "--------------------------------------------------------------------------"
 echo "*** 5. Voo com maior atraso na saída ***"
-
+sort -t "," -k16,16gr $arquivo | cut -d "," -f1,2,3,10,16 | head -n 1
 
 # 6. Tempo de atraso total para a companhia Delta Air Lines;
 echo -e "--------------------------------------------------------------------------"
