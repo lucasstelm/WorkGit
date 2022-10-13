@@ -21,7 +21,7 @@ echo -e "Atrasos de chegada: $(grep $(echo -e $companhia) 2006-sample.csv| awk -
 # 2. Voo com maior atraso na chegada;
 echo -e "--------------------------------------------------------------------------"
 echo "*** 2. Voo com maior atraso na chegada ***"
-
+sort -t"," -k15,15gr $arquivo | cut -d"," -f1,2,3,10,15 | head -n 1
 
 # 3. Voo mais longo;
 echo -e "--------------------------------------------------------------------------"
