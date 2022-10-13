@@ -1,5 +1,4 @@
 #!/bin/bash
-
 arquivo="$1"
 companhia="$2"
 if [ -z "$arquivo" ]; then
@@ -33,6 +32,7 @@ echo "Voo mais longo e o tempo de voo:"
 # 4. Quantidade de voos redirecionados;
 echo -e "--------------------------------------------------------------------------"
 echo "*** 4. Quantidade de voos redirecionados ***"
+echo -e  "Foram redirecionados $(cut -d, -f24 2006-sample.csv|grep 1|wc -l) vôos"
 
 # 5. Voo com maior atraso na saída;
 echo -e "--------------------------------------------------------------------------"
@@ -47,3 +47,5 @@ echo "*** 6. Tempo de atraso total para a companhia Delta Air Lines ***"
 # 7. Tempo total de atrasos para a decolagem de vôos no aeroporto JFK;
 echo -e "--------------------------------------------------------------------------"
 echo "*** 7. Tempo total de atrasos para a decolagem de vôos no aeroporto JFK ***"
+(grep JFK 2006-sample.csv| awk -F "," '{if ($16>0) print $16}'| sum| cut -d ' ' -f 1)
+#teste
