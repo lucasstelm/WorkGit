@@ -16,14 +16,14 @@ Para cada *feature*, uma *issue* precisa ser aberta. A issue deve ser assinalada
 
 1. Descobrir a quantiade de atrasos de uma dada companhia passada como parâmetro. Consultar [essa referência](https://tecadmin.net/tutorial/bash-scripting/bash-command-arguments/) sobre como criar e receber parâmetros em um script bash.
 
-1. Descobrir o vôo com maior atraso na chegada (`ArrDelay`) registrado.
+1. Descobrir o voo com maior atraso na chegada (`ArrDelay`) registrado.
 
-1. Descobrir o vôo com maior atraso na saída (`DepDelay`) registrado.
+1. Descobrir o voo com maior atraso na saída (`DepDelay`) registrado.
 
-1. Descobrir o vôo mais longo.
+1. Descobrir o voo mais longo.
 
-1. Contar quantos vôos precisaram ser redirecionados (`Diverted`).
+1. Contar quantos voos precisaram ser redirecionados (`Diverted`).
 
-1. Utilizando a dica [nessa resposta](https://stackoverflow.com/a/3096575), calcular o tempo de atraso total para a companhia `Delta Air Lines`. Não esquecer de filtrar linhas com dados faltando e também com valores negativos (casos em que os vôos são adiantados) 
+1. Utilizando a dica [nessa resposta](https://stackoverflow.com/a/3096575), calcular o tempo de atraso total para a companhia `Delta Air Lines`. Não esquecer de filtrar linhas com dados faltando e também com valores negativos (casos em que os voos são adiantados) 
 
-1. Mostrar o tempo total de atrasos para a decolagem de vôos no aeroporto `JFK`, de Nova Iorque.
+1. Mostrar o tempo total de atrasos para a decolagem de voos no aeroporto `JFK`, de Nova Iorque.
