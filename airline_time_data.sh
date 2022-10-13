@@ -1,6 +1,7 @@
 #!/bin/bash
 
 arquivo="$1"
+companhia="$2"
 if [ -z "$arquivo" ]; then
     echo -e "\nERRO: Informe o arquivo de dados como parâmetro.\n"
     exit 1
@@ -11,13 +12,16 @@ echo -e "\n                   Exercício resolvido em: $(date +%F\ %T)"
 echo -e "\n-----------------------------------------------------------------------------\n"
 
 # 1. Quantidade de atrasos de uma dada companhia passada como parâmetro;
-
 echo -e "*** 1. Quantidade de atrasos de uma dada companhia passada como parâmetro ***"
+
+echo -e "Atrasos de partida: $(grep $(echo -e $companhia) 2006-sample.csv| awk -F "," '$16>0{c++} END{print c+0}')"
+echo -e "Atrasos de chegada: $(grep $(echo -e $companhia) 2006-sample.csv| awk -F "," '$15>0{c++} END{print c+0}')"
+
 
 # 2. Voo com maior atraso na chegada;
 echo -e "--------------------------------------------------------------------------"
 echo "*** 2. Voo com maior atraso na chegada ***"
-
+sort -t"," -k15,15gr $arquivo | cut -d"," -f1,2,3,10,15 | head -n 1
 
 # 3. Voo mais longo;
 echo -e "--------------------------------------------------------------------------"
