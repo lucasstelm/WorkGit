@@ -36,7 +36,7 @@ echo "*** 5. Voo com maior atraso na saída ***"
 # 6. Tempo de atraso total para a companhia Delta Air Lines;
 echo -e "--------------------------------------------------------------------------"
 echo "*** 6. Tempo de atraso total para a companhia Delta Air Lines ***"
-
+awk -F"," -f delta.awk $arquivo
 
 # 7. Tempo total de atrasos para a decolagem de vôos no aeroporto JFK;
 echo -e "--------------------------------------------------------------------------"
