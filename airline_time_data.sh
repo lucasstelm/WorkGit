@@ -42,7 +42,7 @@ sort -t "," -k16,16gr $arquivo | cut -d "," -f1,2,3,10,16 | head -n 1
 # 6. Tempo de atraso total para a companhia Delta Air Lines;
 echo -e "--------------------------------------------------------------------------"
 echo "*** 6. Tempo de atraso total para a companhia Delta Air Lines ***"
-
+awk -F"," -f delta.awk $arquivo
 
 # 7. Tempo total de atrasos para a decolagem de vôos no aeroporto JFK;
 echo -e "--------------------------------------------------------------------------"
