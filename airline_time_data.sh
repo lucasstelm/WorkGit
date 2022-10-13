@@ -26,6 +26,8 @@ sort -t"," -k15,15gr $arquivo | cut -d"," -f1,2,3,10,15 | head -n 1
 # 3. Voo mais longo;
 echo -e "--------------------------------------------------------------------------"
 echo "*** 3. Voo mais longo ***"
+echo "Voo mais longo e o tempo de voo:"
+(sort -t, -n -r -k14 2006-sample.csv| head -1| cut -d, -f11,14)
 
 
 # 4. Quantidade de voos redirecionados;
@@ -45,4 +47,3 @@ echo "*** 6. Tempo de atraso total para a companhia Delta Air Lines ***"
 # 7. Tempo total de atrasos para a decolagem de vôos no aeroporto JFK;
 echo -e "--------------------------------------------------------------------------"
 echo "*** 7. Tempo total de atrasos para a decolagem de vôos no aeroporto JFK ***"
-
