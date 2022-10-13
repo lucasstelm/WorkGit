@@ -1,0 +1,41 @@
+
+-----------------------------------------------------------------------------
+
+                   Exercício resolvido em: 2022-10-13 16:38:37
+
+-----------------------------------------------------------------------------
+
+*** 1. Quantidade de atrasos de uma dada companhia passada como parâmetro ***
+
+ Informe o código da companhia aérea cuja quantidade de atrasos deve ser calculada: 
+
+Atrasos de partida: 2885
+Atrasos de chegada: 2980
+--------------------------------------------------------------------------
+*** 2. Voo com maior atraso na chegada ***
+Número do voo com maior atraso na chegada e o seu respectivo atraso:
+740,822.0
+--------------------------------------------------------------------------
+*** 3. Voo com maior atraso na saída ***
+Número do voo com maior atraso na saída e o seu respectivo atraso:
+740,792.0
+--------------------------------------------------------------------------
+*** 4. Voo mais longo ***
+Número do voo mais longo e o seu respectivo tempo de voo:
+116,1584.0
+--------------------------------------------------------------------------
+*** 5. Quantidade de voos redirecionados ***
+Foram redirecionados 133 voos.
+--------------------------------------------------------------------------
+*** 6. Tempo de atraso total para a companhia Delta Air Lines ***
+Atraso total de chegada: 63427
+Atraso total de partida: 52758
+Atraso total: 116185
+--------------------------------------------------------------------------
+*** 7. Tempo total de atrasos para a decolagem de vôos no aeroporto JFK ***
+22954
+
+--------------------------------------------------------------------------
+          Os resultados foram salvos no arquivo respostas.log
+--------------------------------------------------------------------------
+
