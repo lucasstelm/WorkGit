@@ -16,9 +16,9 @@ echo -e "\n---------------------------------------------------------------------
 echo -e "*** 1. Quantidade de atrasos de uma dada companhia passada como parâmetro ***"
 echo -e "\n Informe o código da companhia aérea cuja quantidade de atrasos deve ser calculada: \n"
 read companhia
-echo -e "Atrasos de partida: $(grep $(echo -e $companhia) $arquivo| awk -F "," '$16>0{c++} END{print c}')"
-echo -e "Atrasos de chegada: $(grep $(echo -e $companhia) $arquivo| awk -F "," '$15>0{c++} END{print c}')"
-
+echo -e "Atrasos de partida: $(grep $(echo -e $companhia) $arquivo| awk -F ',' '{print $16}'| grep -v '^0.0'|awk -F "," '$1>0{c++} END{print c}')"
+echo -e "Atrasos de chegada: $(grep $(echo -e $companhia) $arquivo| awk -F ',' '{print $15}'| grep -v '^0.0'|awk -F "," '$1>0{c++} END{print c}')"
+	
 # 2. Voo com maior atraso na chegada;
 echo -e "--------------------------------------------------------------------------"
 echo "*** 2. Voo com maior atraso na chegada ***"
