@@ -3,7 +3,6 @@
 exec 1> respostas.log
 
 arquivo="$1"
-companhia="$2"
 if [ -z "$arquivo" ]; then
     echo -e "\nERRO: Informe o arquivo contendo os dados para a análise.\n"
     exit 1
